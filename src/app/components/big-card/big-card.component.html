@@ -1,20 +1,20 @@
 <div class="container__big-card">
   <div class="big-card__photo">
     <!--"https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"  -->
-    <img src= "https://www.w3bai.com/css/img_lights.jpg"
-    alt=""
+    <img src= "{{ photoCover }}"
+    alt= "{{ cardTitle }}"
     >
   </div>
   <div class="big-card__title">
-    <h1> <a href="#">
-      Imagem do espaço
+    <h2> <a [routerLink]="['content', id]">
+      {{  cardTitle }}
     </a>
-    </h1>
+    </h2>
   </div>
   <div class="big-card__description">
     <p>
-      <a href="#">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit velit ea amet cupiditate aliquid. Fugiat dicta ullam, velit minus nam doloremque veniam facere, rem ipsa aliquid ipsam quaerat error.
+      <a [routerLink]="['content', id]">
+      {{ carDescription }}
     </a>
     </p>
   </div>

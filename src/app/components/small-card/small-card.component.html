@@ -2,16 +2,16 @@
   <div class="container__small-card-content">
     <div class="small-card__photo">
       <!--"https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"  -->
-      <img src= "https://www.w3bai.com/css/img_lights.jpg"
-      alt=""
+      <img src= "{{ photoCover }}"
+      alt= "{{ cardDescription }}"
       >
     </div>
   
     <div class="small-card__title">
-      <h1> <a href="#">
-        Imagem do espaço
+      <h3> <a [routerLink]="['content', id]">
+        {{ cardDescription }}
       </a>
-      </h1>
+      </h3>
     </div>
   </div>
   <div class="container__small-card__separator">

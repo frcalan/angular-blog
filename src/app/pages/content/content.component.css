@@ -1,0 +1,32 @@
+.container__content {
+  width: 100%;
+  height: 100vh;
+
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.content__cover > img {
+  border: 4px solid #FAF0CA;
+  width: 450px;
+  min-width: 500px;
+  height: 300px;
+}
+.content__title > h1 {
+  letter-spacing: 0.1rem;
+}
+
+
+.content__description {
+  margin-top: 1rem;
+}
+
+.content__description > p {
+  width: 38rem;
+  margin: 12px 0;
+
+}
